@@ -1,0 +1,11 @@
+{
+  "name": "Reftagger",
+  "about_url": "https://github.com/discoursehosting/discourse-tc-reftagger",
+  "authors": "richard@discoursehosting.com",
+  "license_url": null,
+  "component": true,
+  "assets": {
+  },
+  "color_schemes": {
+  }
+}

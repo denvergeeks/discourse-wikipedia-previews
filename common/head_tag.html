@@ -1,0 +1,34 @@
+<script type="text/discourse-plugin" version="0.8.13">
+var translations = {
+  "Amplified Bible (AMP)": "AB",
+  "American Standard Version (ASV)": "ASV",
+  "Darby": "DAR",
+  "English Standard Version": "ESV",
+  "God's Word (GW)": "GW",
+  "Holman Christian Standard Bible (HCSB)": "HCSB",
+  "King James Version (KJV)": "KJV",
+  "Lexham English Bible (LEB)": "LEB",
+  "Message Bible": "MESSAGE",
+  "New American Standard Bible (NASB)": "NASB",
+  "New Century Version (NCV)": "NCV",
+  "New International Version (NIV)": "NIV",
+  "New International Reader's Version (NIRV)": "NIRV",
+  "New King James Version (NKJV)": "NKJV",
+  "New Living Translation (NLT)": "NLT",
+  "Douay-Rheims": "DOUAYRHEIMS",
+  "Young's Literal Translation (YLT)": "YLT"
+};
+
+window.refTagger = {
+  settings: {
+    bibleVersion: translations[settings.bible_translation],
+    socialSharing: []
+  }
+};
+let loadScript = require('discourse/lib/load-script').default;
+api.decorateCooked($elem => {
+  loadScript("//api.reftagger.com/v2/RefTagger.js").then(()=>{
+    window.refTagger.tag($elem[0]);    
+  })
+});
+</script>
