@@ -1,6 +1,6 @@
 extend_content_security_policy:
   type: list
-  default: "script_src: https://api.reftagger.com|script_src: https://reftaggercdn.global.ssl.fastly.net"
+  default: "script_src: https://api.reftagger.com|script_src: https://reftaggercdn.global.ssl.fastly.net|script_src: https://reftagger.bibliacdn.com"
 bible_translation:
   type: enum
   default: New American Standard Bible (NASB)
