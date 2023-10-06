@@ -27,7 +27,7 @@ window.refTagger = {
 };
 let loadScript = require('discourse/lib/load-script').default;
 api.decorateCooked($elem => {
-  loadScript("//api.reftagger.com/v2/RefTagger.js").then(()=>{
+  loadScript("https://unpkg.com/browse/wikipedia-preview@latest/dist/wikipedia-preview.production.js").then(()=>{
     window.refTagger.tag($elem[0]);    
   })
 });
