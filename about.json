@@ -1,7 +1,7 @@
 {
-  "name": "Reftagger",
-  "about_url": "https://github.com/discoursehosting/discourse-tc-reftagger",
-  "authors": "richard@discoursehosting.com",
+  "name": "Wikipedia Previews",
+  "about_url": "https://github.com/denvergeeks/discourse-wikipedia-previews",
+  "authors": "richard@discoursehosting.com, @denvergeeks",
   "license_url": null,
   "component": true,
   "assets": {
