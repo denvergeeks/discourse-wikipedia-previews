@@ -19,14 +19,14 @@
 
 <script src="https://unpkg.com/browse/wikipedia-preview@latest/dist/wikipedia-preview.production.js"></script>
 
-<script type="text/javascript">
+<script id='wikipedia-preview-init-js-extra'>
 var wikipediapreview_init_options = {"detectLinks":"1"};
 </script>
 
+
+
 <script type="text/javascript">
-wikipediaPreview.init({
-	detectLinks: true
-});
+wikipediaPreview.init({detectLinks:!!wikipediapreview_init_options.detectLinks});
 </script>
 
 
