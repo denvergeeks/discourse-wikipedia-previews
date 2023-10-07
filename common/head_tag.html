@@ -1,7 +1,12 @@
 <script src="https://unpkg.com/browse/wikipedia-preview@latest/dist/wikipedia-preview.production.js"></script>
 <script type="text/javascript">
-  wikipediaPreview.init()
+wikipediaPreview.init({
+	popupContainer: '[data-wikipedia-popup]',
+	lang: 'en'
+});
 </script>
+
+
 
 <script type="text/discourse-plugin" version="0.8">
   const { iconNode } = require("discourse-common/lib/icon-library");
